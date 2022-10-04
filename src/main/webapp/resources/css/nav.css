@@ -1,0 +1,65 @@
+@charset "UTF-8";
+	.search {
+	  position: relative;
+	  width: 900px;
+	  margin : 50px auto;
+	}
+	
+	#searchtext {
+	  width: 100%;
+	  border: 1px solid #bbb;
+	  border-radius: 8px;
+	  padding: 10px 12px;
+	  font-size: 14px;
+	}
+	
+	#searchimg {
+	  position : absolute;
+	  width: 17px;
+	  top: 10px;
+	  right: 12px;
+	  margin: 0;
+	}
+	#ptitle{
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 white-space: nowrap;
+	}
+	.mdetail{
+		margin-top : 5px;
+	}
+	.prodprice{
+		float : left;
+		font-size : 14px;
+		font-weight : bold;
+		
+	}
+	.diffdate{
+		padding-top : 2px;
+		text-align : right;
+		font-size : 12px;
+		color : gray;
+	}
+	.prodtitle{
+		font-size : 12px;
+	}
+	.col.mb-2.prodarea{
+		padding-right : calc(var(--bs-gutter-x) * 0.1);
+		padding-left : calc(var(--bs-gutter-x) * 0.1);
+		height : 300px;
+	}
+	.card.h-100.prodcard{
+		height : 300px;
+	}
+	.card-img-top.prodimg{
+		height : 230px;
+	}
+	.card-body{
+		padding : auto 0.2rem;
+	}
+ 	.navbar-nav.mb-2.mb-lg-0.mainnav{
+		flex-direction : row;
+	} 
+	.nav-link.sbtn, .nav-item.dropdown.sbtn{
+		margin-left : 15px;
+	}

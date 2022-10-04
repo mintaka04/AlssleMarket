@@ -1,0 +1,534 @@
+@charset "UTF-8";
+	select option[value=""][disabled] {
+		display: none;
+	}
+	.container{
+		margin-left: 5%;
+		margin-right: 5%;
+		width:90%;
+	}
+	/* 아이콘 */
+	#icon{
+		width:50px;
+		height:50px;
+		float:left;
+	}
+	#search{
+	  width: 50%;
+	  border: 1px solid #bbb;
+	  border-radius: 8px;
+	  padding: 10px 12px;
+	  font-size: 14px;
+	  margin-top: 6px;
+	}
+	#header{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width:100%;
+		height:50px;
+	}
+	.inputContainer{
+	    width: 100%;
+	    font-size: 15px;
+	    display: inline-block;
+	}
+	.imgbox{
+	    flex: 0 0 auto;
+	    width: 450px;
+	    float: left;
+	}
+	.selectInfo{
+		width:842.39px;
+		height:400px; 
+		display: inline-block;
+	}
+	.selectInfo>div{
+		margin-bottom: 25px;
+	}
+	.selectInfoDiv{
+		width:10%; float:left; padding-top: 13px;
+	}
+	.selectInfoDivSelect{
+		width:10%; float:left;
+	}
+	.inputdiv{
+		width:90%;
+		height:50px;
+		border-bottom: 1px solid rgb(238, 238, 238);
+	} 
+	.detail{
+		margin-top:40px;
+		width:100%;
+		height:500px;
+		font-size:20px;
+		display: inline-block;
+	}
+	#detail{
+		width:100%;
+		height:100%;
+	}
+	input[value="등록하기"]{
+		margin-top:10px;
+		float:right;
+	}
+	* {box-sizing:border-box} 
+
+	/* 슬라이드쇼 컨테이너의 디자인 */
+	.slideshow-container {
+	  max-width: 400px;
+	  width:400px;
+	  height:400px;
+	  position: relative;
+	  background-image:url("../../images/default.png");
+	  background-position: center;
+	  background-size: 100% 100%;
+	}
+	
+	/* 이미지를 숨기는데 사용 */
+	.mySlides {
+	    display: none;
+	}
+	
+	/* 다음, 이전 버튼 */
+	.prev, .next {
+	  all: unset;
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.8s ease;
+	  border-radius: 0 3px 3px 0;
+	}
+	
+	.prev{
+		position: absolute;
+		left:0px;
+	}
+	
+	/* "다음 버튼"을 오른쪽에 위치 */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+	
+	/* 마우스를 올리면 배경색을 변경 */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+	
+	/* 하단의 점들 */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: 0.8s ease;
+	}
+	
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+	
+	.mySlidesimg{
+		width:400px;
+		height:400px;
+	}
+	
+	.dotCollection{
+		text-align: center;
+		width:400px;
+	}
+	.input-file-button{
+		color: white;
+		cursor: pointer;
+	}
+	.uploadbtn{
+		height:auto;
+		text-align: right;
+	}
+	.reset-button{
+		cursor: pointer;
+	}
+	.resetdiv{
+		width:36px;
+		height:auto;
+		position:absolute;
+		bottom:10px;
+		right:10px;
+	}
+	.submitbtndiv{
+		margin-top:30px;
+		text-align: right;
+	}
+	.likebtndiv{
+		position:absolute;
+		bottom:10px;
+		right:10px;
+		width:40px;
+		height:40px;
+	}
+	.likebtn{
+		width:100%;
+		height:100%;
+		cursor: pointer;
+	}
+	.master{
+		background: rgb(247, 0, 0);
+	    border: 1px solid rgb(223, 0, 0);
+	    color: rgb(255, 255, 255);
+	    flex: 1 1 0%;
+	    display: flex;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    height: 56px;
+	    font-size: 18px;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    width: 100px;
+    	float: right;
+	}
+	.col-md-6-userupdate1{
+	    flex: 0 0 auto;
+    	width: 450px;
+    	float:left;
+	}
+	.col-md-6-userupdate2{
+	    flex: 0 0 auto;
+    	width: 63.23%;
+    	float:left;
+	}
+	.lfImbI {
+	    height: 100%;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	}
+	.haVDIN {
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    color: rgb(204, 204, 204);
+	    font-size: 16px;
+	    height: 100%;
+	}
+	.fBhbVz {
+	    height: 30px;
+	    margin-top: 15px;
+	    margin-bottom: 25px;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    justify-content: space-between;
+	}
+	.haVDIN::after {
+	    content: "";
+	    width: 1px;
+	    height: 12px;
+	    border-right: 1px solid rgb(238, 238, 238);
+	    margin-left: 10px;
+	    margin-right: 10px;
+	}
+	.haVDIN img {
+	    margin-right: 5px;
+	}
+	.haVDIN:last-child::after {
+	    border-right: 0px;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+	.user-marginbottom{
+		margin-bottom: 25px;
+	}
+	.jaUllp {
+	    display: flex;
+	    margin-bottom: 25px;
+	}
+	.fcpmSq {
+	    position: relative;
+	    width: 90px;
+	    padding-left: 15px;
+	    color: rgb(153, 153, 153);
+	}
+	.ibSORm {
+	    position: relative;
+	    display: flex;
+	}
+	.fcpmSq::before {
+	    content: "";
+	    position: absolute;
+	    top: 7px;
+	    left: 6px;
+	    width: 3px;
+	    height: 3px;
+	    border-radius: 50%;
+	    background: rgb(204, 204, 204);
+	}
+	.hpgBcN {
+	    display: flex;
+	}
+	.lbzvcl {
+	    flex: 1 1 0%;
+	    border-right: 1px solid rgb(238, 238, 238);
+	}
+	.dcmzyJ {
+	    padding-right: 30px;
+	    height: calc(100% - 50px);
+	}
+	.gZUwUe {
+	    font-size: 18px;
+	    padding: 0px 0px 16px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.ijSpzm {
+	    margin-top: 30px;
+	}
+	.evwfQs {
+	    margin: 40px 0px;
+	    line-height: 1.5;
+	}
+	.lfypaP {
+	    padding: 20px 0px;
+	    border-top: 1px solid rgb(238, 238, 238);
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	    display: flex;
+	}
+	.fWMyvb {
+	    width: 221px;
+	    border-right: 1px solid rgb(238, 238, 238);
+	}
+	.fEmvdT {
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    margin-bottom: 15px;
+	    font-size: 13px;
+	    color: rgb(178, 178, 178);
+	}
+	.heuxkD {
+	    font-size: 13px;
+	    color: rgb(102, 102, 102);
+	    padding: 0px 15px;
+	    display: flex;
+	    flex-wrap: wrap;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    line-height: 1.5;
+	    min-height: 19px;
+	}
+	.fWMyvb {
+	    width: 221px;
+	    border-right: 1px solid rgb(238, 238, 238);
+	}
+	.fEmvdT {
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    margin-bottom: 15px;
+	    font-size: 13px;
+	    color: rgb(178, 178, 178);
+	}
+	.heuxkD {
+	    font-size: 13px;
+	    color: rgb(102, 102, 102);
+	    padding: 0px 15px;
+	    display: flex;
+	    flex-wrap: wrap;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    line-height: 1.5;
+	    min-height: 19px;
+	}
+	.fWMyvb:last-child {
+	    border-right: 0px;
+	}
+	.jciAix {
+	    margin-top: 10px;
+	}
+	.jfhcrp {
+	    padding: 60px 0px 15px;
+	    font-size: 18px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.iMQsQP {
+	    color: rgb(247, 47, 51);
+	}
+	.dZMWqM {
+	    border-right: 1px solid rgb(238, 238, 238);
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	    border-left: 1px solid rgb(238, 238, 238);
+	}
+	.eCLLuL {
+	    width: 100%;
+	    padding: 20px;
+	    height: 80px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.gGPaKe {
+	    width: 100%;
+	    height: 100%;
+	    resize: none;
+	    font-size: 13px;
+	    line-height: 1.5;
+	}
+	.heLoWl {
+	    display: flex;
+	    width: 100%;
+	    height: 50px;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    -webkit-box-pack: justify;
+	    justify-content: space-between;
+	    padding: 0px 10px;
+	}
+	.euLZza {
+	    margin-left: 10px;
+	    font-size: 12px;
+	    color: rgb(136, 136, 136);
+	}
+	.jtwvCV {
+	    border: 1px solid rgb(238, 238, 238);
+	    height: 32px;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    padding: 0px 20px;
+	    font-size: 13px;
+	    color: rgb(136, 136, 136);
+	}
+	.eytBFy {
+	    margin-top: 10px;
+	}
+	.bEhvoQ {
+	    width: 330px;
+	}
+	.lbmmDG {
+	    height: calc(100% - 50px);
+	    border-right: 1px solid rgb(238, 238, 238);
+	    padding: 0px 32px 118px;
+	    position: relative;
+	}
+	.kUXckj {
+	    font-size: 18px;
+	    padding: 0px 0px 16px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.hyAkCm {
+	    padding: 0px 10px;
+	}
+	.khiPFC {
+	    display: flex;
+	    margin-top: 20px;
+	    margin-bottom: 16px;
+	}
+	.fuODcw {
+	    margin-right: 16px;
+	    color: rgb(33, 33, 33);
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	.gMYroH {
+	    padding: 30px 0px 16px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.fEDdTw {
+	    color: rgb(247, 47, 51);
+	}
+	.gMYroH .sc-clBsIJ {
+	    margin-left: 5px;
+	}
+	.iXqvuW {
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.iafGxm {
+	    display: flex;
+	    padding-top: 16px;
+	}
+	.fcVzVM {
+	    margin-right: 12px;
+	    display: flex;
+	    flex-shrink: 0;
+	    color: rgb(33, 33, 33);
+	    text-decoration: none;
+	    cursor: pointer;
+	    background-color: transparent;
+	}
+	.kedHn {
+	    padding-bottom: 16px;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.gxpXGn {
+	    height: 40px;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    border-bottom: 1px solid rgb(238, 238, 238);
+	}
+	.YIppl {
+	    position: absolute;
+	    bottom: 0px;
+	    left: 0px;
+	    display: flex;
+	    width: 100%;
+	    padding: 16px;
+	}
+	.eYQFNv {
+	    background: rgb(255, 164, 37);
+	    border: 1px solid rgb(243, 150, 20);
+	    color: rgb(255, 255, 255);
+	}
+	.YIppl > :last-child {
+	    margin-right: 0px;
+	    background: rgb(247, 0, 0);
+	    border: 1px solid rgb(223, 0, 0);
+	    color: rgb(255, 255, 255);
+	}
+	.YIppl > * {
+	    flex: 1 1 0%;
+	    display: flex;
+	    margin-right: 10px;
+	    -webkit-box-pack: center;
+	    justify-content: center;
+	    height: 56px;
+	    font-size: 18px;
+	    -webkit-box-align: center;
+	    align-items: center;
+	}
+	button {
+	    background-color: transparent;
+	    cursor: pointer;
+	    outline: none;
+	}
+	div>a{
+		text-decoration: none !important;
+		background-color: transparent;
+		color: black !important;
+	}
+	.iEdtuR{
+	    font-size: 13px;
+	}	
+	.card-img-top{
+		width: 100%;
+		height:268px;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	
